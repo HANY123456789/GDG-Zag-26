@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> form </title>
+</head>
+<body>
+    <h1>Basic HTML Form Elements </h1>
+     <form action="learn.form">
+            <div>
+                <label for="Name">Name(text):</label>
+                <input type="text" placeholder="name" name="user" required>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="text" name="mail" placeholder="Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" minlength="6" maxlength="10" name="password"required>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="color">Favorite color:</label>
+                <input type="color" name="usercolor" id="usercolor">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="range">Volume(range 0-100):</label>
+                <input type="range" step="20" min="0" max="100" value="0">
+            </div>
+            <br>
+           
+            <div>
+                <h3>Best Programming Languages?</h3>
+                <input type="radio" name="os" value="HTML">
+                <label>HTML</label>
+            </div>
+            <div>
+                <input type="radio" name="os" value="python">
+                <label>css</label>
+            </div>
+            <div>
+                <input type="radio" name="os" value="c#">
+                <label>java</label>
+            </div>
+            <br>
+            <div>
+                <h3>Best Programming Languages?</h3>
+                <input type="checkbox" name="os" value="CSS"checked>
+                <label for ="css">CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="la" value="c++"checked>
+                <label for="C++">html</label>
+            </div>
+            <div>
+                <input type="checkbox"name="bl"value="python"checked>
+                <label for="python">python</label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="Language">Programming Language:</label>
+                <select name="Languages"id="Language" >
+                    <option value="1">c++</option>
+                    <option value="2"selected>HTML</option>
+                    <option value="3">CSS</option>
+                    <option value="4">java</option>
+                </select>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="textarea">your comment(textarea):</label><br>
+                <textarea cols="40" rows="4"placeholder="text"></textarea>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label>Upload a file:</label>
+                <input type="file">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label>Search this site:</label>
+                <input type="search">
+            </div>
+            <br>
+            <div>
+                <label>Your Website URL:</label>
+                <input type="url" placeholder="https//example.com">
+            </div>
+            <br>
+            <hr>
+            <div>
+            <h2>course start date?</h2>
+            <label for="data">data</label>
+            <input type="date" name="date">
+            <br>
+            <br>
+            <label for="month">month</label>
+            <input type="month" name="month">
+            <br>
+            <br>
+            <label for="time">time</label>
+            <input type="time" name="time">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <label>Choose a Browser(with suggestions):</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="python">
+                <option value="c#">
+                <option value="C">
+                <option value="c++">
+            </datalist>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+</body>
+</html>
