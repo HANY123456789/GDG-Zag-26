@@ -1,0 +1,222 @@
+.user {
+    color: brown;
+    font-size: 20px;
+}
+h1{
+    color: rgb(5, 5, 54);
+}
+.test{
+    color: green;/*يتم تحديدالعنصر عن طريق اسم class بعلامه (dot). -يتم تطبيق style علي العنصر الذي له نفس اسم class-اسم الكلاس لا يمكن ان يبداء برقم */
+}
+#style{
+    color: gold;/*يتم تحديدالعنصر عن طريق اسم id بعلامه # -يتم تطبيق style علي العنصر الذي له نفس id*/
+}
+/**{
+    color: gray;
+}/*universal:يتم تحديد العناصر عن طريق الاسم علامه (*)-يتم تطبيق الاستايل علي جمع العناصر الموجوده بداخل الصفحه*/
+/*في عنصر اخر اسمه group بيتم تحديد العنصر عن طريق اسماء العناصر ومفصول بينهم بcomma(,)- 
+ويتم تطبيق الاستايل علي مجموعه من العناصر التي يتم تحديدها مثل p,h1,h5{}*/
+ul em{
+    color: rgb(33, 110, 110);/*يتم تحديد العنصر عن طريق اسماء العناصر ومفصول بينهم بمسافه space -
+يتم تطبيق style عند تحقق شرط معين مثلا عند وجود عنصر داخل عنصر اخر*/
+}
+h1.type{
+    border:dotted 10px rgb(16, 59, 39);/*الحواف التي تكون حول العناصر انواعه dotted-solid-dashed*/
+    width: 160px;/*حجم الحواف*/
+    height:30px;
+    padding: 40px ;/*يستخدم في التحكم في الهوامش الداخليه للعناصر*/
+    margin: 80px;/*تستطيع التحكم في الهوامش الخارجيه للعناصر*/
+    background-image: url(ammar.jpg);/*يمكن اختيار صوره وجعلها خلفيه للعنصر*/
+    background-attachment: fixed;/*تساعد في التحكم في الخلفيه وجعلها ثابته او تتحرك مع المحتوي عند التحرك*/
+    background-position: center center;/*التحكم في مكان عرض الصوره*/
+    background-size: contain;/*التحكم في حجم الصوره وطريقه عرضها*/
+}
+div{
+    background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: inline-block;/*التحكم في طريقه عرض العنصر وفي 3 انواع block - inline-block - inline*/
+
+}
+p1{
+     background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: block;
+}
+p2{
+     background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: none;/*تستخدم لاخفاء العنصر نهائياولن يكون له مكان محجوز*/
+}
+p3{
+      background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: block;
+}
+.first{
+        background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: inline-block;
+}
+.second{
+        background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    visibility: hidden;/*سيتم اخفاء العنصر لكن سيكون له مكان محجوز */
+}
+.theard{
+        background-color: grey;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    border: solid;
+    display: inline-block;
+}
+.div1, .div2, .div3 {
+/*طريقه تستخدم لربط العناصر المتشابهة في الخواص ببعضهاوكتابه الخواص مره واحده فقط*/
+width: 100px;
+ background-color: #753a3a;
+  border:solid;
+   padding: 10px;
+    margin: 10px;
+}
+.div3{
+    color: rgb(95, 64, 182);
+    font-size:xx-large;
+    background-color: black;
+}
+div .p1{
+    color: rgb(77, 48, 6);
+    font-size:large;
+}
+#div{
+    width: 70px;
+     height: 70px;/*تحديد الطول والعرض للعنصر*/
+}
+#div1{
+    min-width: 150px;
+     min-height: 100px;/*تحديد الحد الأدنى لمساحة العنصر, وتتمدد مساحة العنصر مع مساحة المحتوي*/
+}
+#div2{
+    max-width: 100px;
+     max-height: 100px;/*تحديد الحد الأقصى لمساحة العنصر, لا تتمدد مساحة العنصر بازدياد
+مساحة المحتوي.*/
+}
+.over{
+    width: 100px;
+    height: 150px;
+    background-color: bisque;
+    margin: auto;
+    border-radius:6px ;
+    overflow: scroll;
+    /*overflow: يتحكم في لجزء الذي تجاوز العنصر 
+    hidding:يقوم ب إخفاء المحتوي الذي تجاوز العنصر
+    scroll:يقوم بإضافة Scroll-bar حتي اذا كان المحتوي لم يتجاوز العنصر .
+    Auto:هو الاختيار الأفضل لأنه يضيف Scroll-bar فقط في حالة اذا تجاوز المحتوي العنصر*/
+    /*يمكن اختيار اتجاه محدد والتحكم به.
+div { overflow-x: hidden; overflow-y: auto}*/
+}
+.color, #c1, #c2, #c3, .TextDecoration, .TextTransform, .LetterSpacing, .TextIndent, .LineHeight, .WordSpacing, .WhiteSpace, .WordBreak, .TextOverflow{
+width: 150px;
+background-color: #72aaa1;
+border:solid rgb(77, 48, 6);
+padding: 10px;
+margin: 10px;
+}
+.color{/*color:يقوم بتحديد لون النصوص فقط.*/
+  color: aliceblue;  
+}
+#c1{/*shadow:إضافة ظل للنص والتحكم فيه.*/
+    text-shadow: 2px 4px 5px rgb(5, 5, 54) ;
+}
+#c2{/*text Align:تحديد اتجاه محاذة النص أ فقيا .*/
+    text-align: center;
+}
+#c3{/*direction:تحديد اتجاه النص.*/
+    direction:rtl;
+}
+.TextDecoration{/*text decoration:التحكم في شكل وزخرفة النص. انواعه underline-overline-line through*/
+    text-decoration: underline;
+}
+.TextTransform{/*text transform:تحويل حجم حروف النص وطريقة عرضها*/
+    text-transform: uppercase;
+}
+.LetterSpacing{/*latter spacing:المسافة بين الحروف, يمكن تزويدها او انقصها*/
+    letter-spacing: 5px;
+}
+.TextIndent{/*text indent:إضافة مسافة قبل النص.*/
+    text-indent: 130px;
+}
+.LineHeight{/*line height:يستخدم لتحديد المسافة بين السطور.*/
+    line-height: 1.6;
+}
+.WordSpacing{/*word spacing:يستخدم للتحكم في المسافة بين الكلمات*/
+    word-spacing: 10px;
+}
+.WhiteSpace{/*white space:التحكم في المسافات بين الكلمات وطريقه الفصل بينهم*/
+    white-space: nowrap;
+}
+.WordBreak{/*word break:التحكم في طريقة فصل الكلمة في حالة تخطيها العنصر.*/
+    word-break: break-all;
+}
+.TextOverflow{/*text overflow:يتحكم في النص الذي تجاوز المحتوي وطريقة عرضة.*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.d1{
+    border: solid rgb(16, 59, 39);
+}
+div h3{
+    border: inherit;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.a1, .a2, .a3, .a4, .a5{
+    border: solid rgb(99, 13, 13);
+    background-color: black;
+    color: aliceblue;
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+}
+.a1{
+font-family: sans-serif;/*يمكن منه اختيار نوع الخط, وكل نوع له شكل مختلف.*/
+}
+.a2{
+    font-size: 20px;/*يتم تحديد حجم الخط ب الوحدات مثل ال" px ", القيمة الافتراضية لحجم الخط العادي هي 16px*/
+}
+.a3{
+    font-style: italic;/*تحديد شكل للخط مثل النص المائل.*/
+}
+.a4{
+    font-variant: small-caps;/*تحويل شكل الخط.*/
+}
+.a5{
+    font-weight: bold;/*تحديد وزن الخط.*/
+}
+#n{
+    border: solid rgb(95, 64, 182);
+    background-color: rgb(34, 20, 34);
+    color: rgb(88, 47, 47);
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+}
